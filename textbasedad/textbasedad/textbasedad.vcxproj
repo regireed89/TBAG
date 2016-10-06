@@ -110,6 +110,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Map.h" />
+    <ClInclude Include="String Class.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="String Class.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
