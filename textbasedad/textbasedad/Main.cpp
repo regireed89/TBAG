@@ -4,8 +4,8 @@
 
 using namespace std;
 
-int main()
-{
+
+
 	struct Player
 	{
 		int location;
@@ -16,16 +16,18 @@ int main()
 		int location;
 		int attack;
 	};
+	int main()
 
+	{
 		int m[5][5];
 		Player regi;
 		Enemy mon1;
 		Enemy mon2;
 		Enemy mon3;
 		int x, y;
-		for (x = 0; x < 5; x++)
+		for (x = 0; x < 4; x++)
 		{
-			for (y = 0; y < 5; y++)
+			for (y = 0; y < 4; y++)
 			{
 				regi.location = m[x][y];
 			}
@@ -42,29 +44,39 @@ int main()
 
 		
 
-		MyString yourmove = MyString("north");
+		MyString yourmove;
+		char word[255];
+		cin >> word;
+		yourmove = MyString(word);
+		yourmove.ConvertLow();
 	
-	if (yourmove.ConvertLow().Compare("north") == true)
-	{
-		regi.location;
-		y--;
-	}
-	if (yourmove.ConvertLow().Compare("south") == true)
-	{
-		regi.location;
-		y++;
-	}
-	if (yourmove.ConvertLow().Compare("east") == true)
-	{
-		regi.location;
-		x++;
-	}
-	if (yourmove.ConvertLow().Compare("west") == true)
-	{
-		regi.location;
-		x--;
-	}
-	
-	
+		
+			if (yourmove.Compare("north") == true)
+			{
+				regi.location;
+				y--;
+				cout << "egegegge";
+			}
+			if (yourmove.Compare("south") == true)
+			{
+				regi.location;
+				y++;
+				cout << "iyhbib";
+			}
+			if (yourmove.Compare("east") == true)
+			{
+				regi.location;
+				x++;
+				cout << "ibouwgrbou";
+			}
+			if (yourmove.Compare("west") == true)
+			{
+				regi.location;
+				x--;
+				cout << "asxyiub";
+			}
+
+		
 	system("pause");
+	system("cls");
 }
