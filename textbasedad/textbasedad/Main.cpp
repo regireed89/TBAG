@@ -16,11 +16,7 @@ struct Enemy
 	int location;
 	int attack;
 };
-struct Trap
-{
-	int location;
-	int damage;
-};
+
 
 int main()
 
@@ -30,7 +26,7 @@ int main()
 		Enemy mon1;
 		Enemy mon2;
 		Enemy mon3;
-		Trap trap;
+		
 		int x, y;
 		for (x = 0; x < 4; x++)
 		{
@@ -52,15 +48,14 @@ int main()
 			mon3.location = m[3][0];
 			mon3.attack = 100;
 
-			trap.damage = 20;
 		}
 			MyString yourmove;
 			char word[255];
-			while (MyString(word) != 'exit')
-			{
+			
+			yourmove = MyString(word);
+			yourmove.ConvertLow();
+			
 				cin >> word;
-				yourmove = MyString(word);
-				yourmove.ConvertLow();
 
 				{
 					if (yourmove.Compare("north") == true)
@@ -83,6 +78,11 @@ int main()
 						regi.location;
 						x--;
 					}
+					else
+					{
+						cout << "didnt type the correct thing YOU LOSE";
+						
+					}
 				}
 				{
 					if (regi.location = mon1.location)
@@ -101,7 +101,10 @@ int main()
 						cout << newhealth;
 					}
 				}
-			}
+
+
+
+			
 	system("pause");
 	system("cls");
 }
