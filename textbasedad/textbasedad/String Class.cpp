@@ -26,24 +26,24 @@ int MyString::Length()
 	return i;
 }
 
-bool MyString::Compare(MyString other)
+bool MyString::Compare(MyString yourmove)
 {
 	int i;
 
-	for (i = 0; i != other.Length() && Length(); i++)//loops until not equal to either strings
+	for (i = 0; i != yourmove.Length() && Length(); i++)//loops until not equal to either strings
 	{
-		if (other.m_string[i] == m_string[i])//compares other to m_string
+		if (yourmove.m_string[i] == m_string[i])//compares other to m_string
 		{
-			cout << "strings are the same";
-			return true;
+			
+			
 		}
 		else
 		{
-			cout << "strings are not the same";
+			
 			return false;
 		}
 	}
-
+	return true;
 }
 
 MyString MyString::Append(MyString other)

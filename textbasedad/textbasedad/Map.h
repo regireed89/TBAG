@@ -1,7 +1,7 @@
 #pragma once
 class map
 {
-private:
+	public:
 	int m[5][5] = { {00, 01, 02, 03, 04},
 				{10,11,12,13,14},
 				{20,21,22,23,24},
