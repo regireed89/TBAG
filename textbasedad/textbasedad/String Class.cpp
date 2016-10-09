@@ -8,7 +8,7 @@ MyString::MyString(char newString[])
 	int i;
 	for (i = 0; newString[i] != '\0'; i++)
 	{
-		m_string[i] = newString[i];
+		m_string[i] = newString[i];  
 	}
 	m_string[i] = '\0';
 }

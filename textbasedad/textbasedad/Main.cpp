@@ -57,7 +57,7 @@ int main()
 			
 				cin >> word;
 
-				{
+				
 					if (yourmove.Compare("north") == true)
 					{
 						regi.location;
@@ -83,8 +83,8 @@ int main()
 						cout << "didnt type the correct thing YOU LOSE";
 						
 					}
-				}
-				{
+				
+				
 					if (regi.location = mon1.location)
 					{
 						int newhealth = regi.health - mon1.attack;
@@ -100,7 +100,7 @@ int main()
 						int newhealth = regi.health - mon3.attack;
 						cout << newhealth;
 					}
-				}
+				
 
 
 

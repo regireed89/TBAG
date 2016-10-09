@@ -110,7 +110,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Map.h" />
     <ClInclude Include="String Class.h" />
   </ItemGroup>
   <ItemGroup>
