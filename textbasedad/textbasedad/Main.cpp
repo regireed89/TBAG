@@ -80,8 +80,7 @@ int main()
 					}
 					else
 					{
-						cout << "didnt type the correct thing YOU LOSE";
-						
+						cout << "didnt type the correct thing YOU LOSE";	
 					}
 				
 				
