@@ -101,7 +101,6 @@ int main()
 			int ehealth = regi.health -= mon2.attack;
 			cout << ehealth;
 		}
-<<<<<<< HEAD
 		else if (regi.location = mon3.location)
 		{
 			int whealth = regi.health -= mon3.attack;
@@ -119,63 +118,4 @@ int main()
 
 		system("pause");
 	}
-=======
-			MyString yourmove;
-			char word[255];
-			
-			yourmove = MyString(word);
-			yourmove.ConvertLow();
-			
-				cin >> word;
-
-				
-					if (yourmove.Compare("north") == true)
-					{
-						regi.location;
-						y--;
-					}
-					if (yourmove.Compare("south") == true)
-					{
-						regi.location;
-						y++;
-					}
-					if (yourmove.Compare("east") == true)
-					{
-						regi.location;
-						x++;
-					}
-					if (yourmove.Compare("west") == true)
-					{
-						regi.location;
-						x--;
-					}
-					else
-					{
-						cout << "didnt type the correct thing YOU LOSE";	
-					}
-				
-				
-					if (regi.location = mon1.location)
-					{
-						int newhealth = regi.health - mon1.attack;
-						cout << newhealth;
-					}
-					if (regi.location = mon2.location)
-					{
-						int newhealth = regi.health - mon2.attack;
-						cout << newhealth;
-					}
-					if (regi.location = mon3.location)
-					{
-						int newhealth = regi.health - mon3.attack;
-						cout << newhealth;
-					}
-				
-
-
-
-			
-	system("pause");
-	system("cls");
->>>>>>> origin/master
 }
