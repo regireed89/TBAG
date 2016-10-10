@@ -81,7 +81,7 @@ char MyString::ConvertLow()
 		{
 			(char)m_string[i] = (int)m_string[i] + 32;
 			//adding 32 to the decimal associated with the characters in the array 
-			cout << m_string[i];
+			
 		}
 	}
 	return m_string[i];
