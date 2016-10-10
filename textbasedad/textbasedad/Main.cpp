@@ -17,11 +17,11 @@ struct Enemy
 
 int main()
 {
-	int m[5][5] = { { 00, 10, 20, 30, 40 },
-				   { 01, 11, 21, 31, 41 },
-				   { 02, 12, 22, 32, 42 },
-				   { 03, 13, 23, 33, 43 },
-				   { 04, 14, 24, 34, 44 } };
+	int m[5][5] = { { 00, 01, 02, 03, 04 },
+				   { 10, 11, 12, 13, 14 },
+				   { 20, 21, 22, 23, 24 },
+				   { 30, 31, 32, 33, 34 },
+				   { 40, 41, 42, 43, 44 } };
 
 	Player regi;
 	Enemy mon1;
@@ -38,17 +38,17 @@ int main()
 		}
 	}
 
-	regi.location = m[2][4];
+	regi.location = m[4][2];
 	regi.health = 200;
 	regi.key = false;
 
-	mon1.location = m[3][4];
+	mon1.location = m[4][3];
 	mon1.attack = 50;
 
-	mon2.location = m[0][2];
+	mon2.location = m[2][0];
 	mon2.attack = 70;
 
-	mon3.location = m[3][0];
+	mon3.location = m[0][3];
 	mon3.attack = 100;
 
 
