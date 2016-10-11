@@ -9,7 +9,7 @@ public:
 	int Length();
 
 	//compare if one string is the same as another
-	bool Compare(MyString other);
+	bool Compare(MyString word);
 
 	//append one string to another
 	MyString Append(MyString other);

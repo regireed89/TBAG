@@ -26,20 +26,20 @@ int MyString::Length()
 	return i;
 }
 
-bool MyString::Compare(MyString yourmove)
+bool MyString::Compare(MyString word)
 {
 	int i;
 
-	for (i = 0; i != yourmove.Length() && Length(); i++)//loops until not equal to either strings
+	for (i = 0; i != word.Length() && Length(); i++)//loops until not equal to either strings
 	{
-		if (yourmove.m_string[i] == m_string[i])//compares other to m_string
+		if (word.m_string[i] == m_string[i])//compares other to m_string
 		{
-			
-			
+
+
 		}
 		else
 		{
-			
+
 			return false;
 		}
 	}
