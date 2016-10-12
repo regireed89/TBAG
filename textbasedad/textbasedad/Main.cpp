@@ -58,6 +58,7 @@ int main()
 		MyString yourmove;
 		char word[255];
 		yourmove.ConvertLow();
+		
 		cout << "WELCOE TO GET OUT A TEXT BASED ADVENTURE GAME WHERE IS THE GOAL IS TO FIND THE EXIT" << endl;
 		cout << "BUT BEFORE YOU CAN DO THAT YOU MUST FIND THE KEY TO BE ABLE TO ESCAPE " << endl;
 		cout << "THERE ARE MULTIPLE ENEMYS AND TRAPS THAT IF YOU RUN INTO THEY WILL HURT YOU" << endl;
@@ -91,6 +92,7 @@ int main()
 			{
 				regi.location = regi.location - 1;
 			}
+			
 			
 
 
