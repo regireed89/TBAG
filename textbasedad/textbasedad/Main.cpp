@@ -51,7 +51,7 @@ int main()
 	mon3.damage = 100;
 
 
-	
+
 
 
 
