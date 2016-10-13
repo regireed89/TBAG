@@ -34,8 +34,9 @@ int main()
 	Enemy mon1;
 	Enemy mon2;
 	Enemy mon3;
-
-
+	Enemy trap1;
+	Enemy trap2;
+	Enemy trap3;
 
 	regi.location = map[4][2];
 	regi.health = 200;
@@ -50,9 +51,14 @@ int main()
 	mon3.location = map[0][3];
 	mon3.damage = 100;
 
+	trap1.location = map[3][1];
+	trap1.damage = 20;
 
+	trap2.location = map[2][4];
+	trap2.damage = 40;
 
-
+	trap3.location = map[0][0];
+	trap3.damage = 60;
 
 
 		MyString yourmove;
@@ -92,34 +98,49 @@ int main()
 			{
 				regi.location = regi.location - 1;
 			}
-			
+			else
+			{
+
+			}
 			
 
 
 			if (regi.location == mon1.location)
 			{
-				int newhealth = regi.health -= mon1.damage;
-				cout << "this room contains an enemy you have been attacked now have " << newhealth << " health remaining" << endl;
+				int ahealth = regi.health -= mon1.damage;
+				cout << "this room contains an enemy you have been attacked now have " << ahealth << " health remaining" << endl;
 			}
 			else if (regi.location == mon2.location)
 			{
-				int ehealth = regi.health -= mon2.damage;
-				cout << ehealth;
+				int bhealth = regi.health -= mon2.damage;
+				cout << "this room contains an enemy you hve been attacked and now have " << bhealth << " health remaining" << endl;
 			}
 			else if (regi.location == mon3.location)
 			{
-				int whealth = regi.health -= mon3.damage;
-				cout << whealth;
+				int chealth = regi.health -= mon3.damage;
+				cout << "this room contains an enemy you hve been attacked and now have " << chealth << " health remaining" << endl;
 			}
-
-
-
-			if (regi.location == map[1][4])
+			else if (regi.location == trap1.location)
+			{
+				int atrap = regi.health -= trap1.damage;
+				cout << "you walked into a trap and now have " << atrap << " health remaining" << endl;
+			}
+			else if (regi.location == trap2.location)
+			{
+				int btrap = regi.health -= trap2.damage;
+				cout << "you walked into a trap and now have " << btrap << " health remaining" << endl;
+			}
+			else if (regi.location == trap3.location)
+			{
+				int ctrap = regi.health -= trap3.damage;
+				cout << "you walked into a trap and now have " << ctrap << " health remaining" << endl;
+			}
+			else if (regi.location == map[1][4])
 			{
 				cout << "YOU'VE FOUND THE KEY NOW FIND THE EXIT" << endl;
 				regi.key = true;
 			}
-			if (regi.key == true && regi.location == map[0][1])
+			else if (regi.key == true && regi.location == map[0][1])
 			{
 				cout << "YOUVE FOUND THE EXIT AND HAVE WON THE GAME";
 
@@ -128,7 +149,13 @@ int main()
 			{
 				cout << "YOUVE FOUND THE EXIT BUT CANNOT LEAVE WITHOUT THE KEY" << endl;
 			}
+			else
+			{
+				cout << "either this room is empty or you typed the wrong command" << endl;
+			}
+			
 
+			
 
 			if (regi.location < 0 || regi.location> 4 && regi.location< 10 || regi.location> 14 && regi.location < 20 || regi.location> 24 && regi.location< 30 || regi.location> 34 && regi.location< 40 || regi.location> 44)
 			{
